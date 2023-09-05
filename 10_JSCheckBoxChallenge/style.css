@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: lawngreen;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 0 gray;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+label>input:checked+span {
+  text-decoration: line-through;
+}
+
+input {
+  margin-right: 10px;
+}

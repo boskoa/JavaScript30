@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background-image: url("assets/space.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 320px;
+}
+
+#clock {
+  height: 300px;
+  width: 300px;
+  border: 1px solid rgb(234, 28, 234);
+  border-radius: 50%;
+  background: radial-gradient(circle at 150px 150px,
+      rgba(234,
+        28,
+        234, 0.9) 6px,
+      rgba(234,
+        28,
+        234, 0.1));
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+#center {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 140px;
+  left: 140px;
+  background-color: rgb(4, 4, 71);
+}
+
+.hand {
+  position: absolute;
+  top: 147px;
+  transition: all 0.3s ease-out;
+  border-radius: 20px;
+}
+
+#hour {
+  width: 80px;
+  left: 70px;
+  transform: rotate(90deg);
+  border-top: 5px solid lime;
+  box-shadow: 0 0 10px 0 lime, 0 0 10px 0 lime inset;
+  transform-origin: 100%;
+}
+
+#minute {
+  width: 100px;
+  left: 50px;
+  transform: rotate(90deg);
+  border-top: 5px solid rgb(26, 220, 146);
+  box-shadow: 0 0 10px 0 rgb(26, 220, 146), 0 0 10px 0 rgb(26, 220, 146) inset;
+  transform-origin: 100%;
+}
+
+#second {
+  width: 120px;
+  left: 30px;
+  transform: rotate(90deg);
+  border-top: 5px solid rgb(174, 255, 0);
+  box-shadow: 0 0 10px 0 rgb(174, 255, 0), 0 0 10px 0 rgb(174, 255, 0) inset;
+  transform-origin: 100%;
+}
+
+#hours {
+  position: absolute;
+  left: -25px;
+  bottom: -8px;
+  font-size: 16px;
+  color: lime;
+  text-shadow: 0 0 3px lime;
+  transition: all 0.3s;
+}
+
+#minutes {
+  position: absolute;
+  left: -25px;
+  bottom: -8px;
+  font-size: 16px;
+  color: rgb(26, 220, 146);
+  text-shadow: 0 0 3px rgb(26, 220, 146);
+  transition: all 0.3s;
+}
+
+#seconds {
+  position: absolute;
+  left: -25px;
+  bottom: -8px;
+  font-size: 16px;
+  color: rgb(174, 255, 0);
+  text-shadow: 0 0 3px rgb(174, 255, 0);
+  transition: all 0.3s;
+}

@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+html {
+  min-width: 700px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 320px;
+  background: linear-gradient(60deg, blue, blue 20%, black 20%, black 23%, yellow 23%, yellow 56%, black 56%, black 84%, green 84%) no-repeat;
+}
+
+#player {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+video {
+  border: 10px solid red;
+  width: 100%;
+}
+
+#player-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2px;
+  height: 40px;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  transform: translateY(60px);
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+#player:hover>*+#player-controls {
+  transform: translateY(5px);
+}
+
+#progress {
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 15px;
+  width: 100%;
+  cursor: col-resize;
+}
+
+#progress-filled {
+  width: 50%;
+  background: gold;
+  flex: 0;
+  flex-basis: 50%;
+  height: 100%;
+}
+
+#other {
+  width: 100%;
+  height: 19px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 5px;
+  background-color: gold;
+  border: none;
+  cursor: pointer;
+}
+
+.player-slider {
+  flex: 1;
+  color: gold;
+
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+.player-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: black;
+  border: none;
+  border-radius: 1px;
+  width: 10px;
+  height: 100%;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.player-slider::-webkit-slider-runnable-track {
+  background: gold;
+  border: none;
+  border-radius: 1px;
+  width: 10px;
+  height: 100%;
+}
+
+.player-slider::-moz-range-track {
+  background-color: gold;
+  height: 100%;
+}
+
+.player-slider::-moz-range-thumb {
+  background-color: black;
+  border: none;
+  border-radius: 1px;
+  width: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+#player-button {
+  width: 20px;
+  padding: 2px;
+}

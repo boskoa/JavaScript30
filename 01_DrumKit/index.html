@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="keys-container">
+    <div data-key="KeyA" class="keys" id="a">
+      <h4>A</h4>
+      <p>CLAP</p>
+    </div>
+    <div data-key="KeyS" class="keys" id="s">
+      <h4>S</h4>
+      <p>HIHAT</p>
+    </div>
+    <div data-key="KeyD" class="keys" id="d">
+      <h4>D</h4>
+      <p>KICK</p>
+    </div>
+    <div data-key="KeyF" class="keys" id="f">
+      <h4>F</h4>
+      <p>OPENHAT</p>
+    </div>
+    <div data-key="KeyG" class="keys" id="g">
+      <h4>G</h4>
+      <p>BOOM</p>
+    </div>
+    <div data-key="KeyH" class="keys" id="h">
+      <h4>H</h4>
+      <p>RIDE</p>
+    </div>
+    <div data-key="KeyJ" class="keys" id="j">
+      <h4>J</h4>
+      <p>SNARE</p>
+    </div>
+    <div data-key="KeyK" class="keys" id="k">
+      <h4>K</h4>
+      <p>TOM</p>
+    </div>
+    <div data-key="KeyL" class="keys" id="l">
+      <h4>L</h4>
+      <p>TINK</p>
+    </div>
+  </div>
+
+  <audio data-key="KeyA" src="assets/clap.wav"></audio>
+  <audio data-key="KeyS" src="assets/hihat.wav"></audio>
+  <audio data-key="KeyD" src="assets/kick.wav"></audio>
+  <audio data-key="KeyF" src="assets/openhat.wav"></audio>
+  <audio data-key="KeyG" src="assets/boom.wav"></audio>
+  <audio data-key="KeyH" src="assets/ride.wav"></audio>
+  <audio data-key="KeyJ" src="assets/snare.wav"></audio>
+  <audio data-key="KeyK" src="assets/tom.wav"></audio>
+  <audio data-key="KeyL" src="assets/tink.wav"></audio>
+
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
