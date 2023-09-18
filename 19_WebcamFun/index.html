@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webcam Fun</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+      <div class="rgb">
+        <div class="sub-rgb">
+          <label>Red Min: <input type="range" min=0 max=255 name="rmin"></label>
+          <label>Red Max: <input type="range" min=0 max=255 name="rmax"></label>
+        </div>
+        <div class="sub-rgb">
+          <label>Green Min: <input type="range" min=0 max=255 name="gmin"></label>
+          <label>Green Max: <input type="range" min=0 max=255 name="gmax"></label>
+        </div>
+        <div class="sub-rgb">
+          <label>Blue Min: <input type="range" min=0 max=255 name="bmin"></label>
+          <label>Blue Max: <input type="range" min=0 max=255 name="bmax"></label>
+        </div>
+        <div class="sub-rgb">
+          <button id="ghosting">ghosting</button>
+          <button id="red-effect">red effect</button>
+          <button id="rgb-split">RGB split</button>
+          <button id="green-screen">green screen</button>
+          <button id="reset">reset</button>
+        </div>
+      </div>
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+  <audio class="snap" src="./assets/snap.mp3" hidden></audio>
+  <script src="index.js">
+  </script>
+</body>
+
+</html>

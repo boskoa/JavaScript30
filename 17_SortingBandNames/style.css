@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background-image: url("./assets/band.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 320px;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+.button {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid limegreen;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-text-stroke-color: limegreen;
+  transition: all 0.1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

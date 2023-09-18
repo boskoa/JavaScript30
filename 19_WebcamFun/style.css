@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 242, 0);
+  height: 100vh;
+  min-width: 600px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+}
+
+.controls {
+  align-self: flex-start;
+  font-size: 12px;
+  width: 425px;
+}
+
+.controls button {
+  padding: 5px;
+  background-color: black;
+  color: rgb(255, 242, 0);
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &:active {
+    transform: scale(1.1)
+  }
+}
+
+.rgb>* {
+  margin-bottom: 10px;
+}
+
+.rgb button {
+  width: 80px;
+  font-size: 10px;
+}
+
+.sub-rgb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-rgb>label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48%;
+}
+
+.player {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+.strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.strip>* {
+  width: 100px;
+}

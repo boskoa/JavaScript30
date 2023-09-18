@@ -23,6 +23,7 @@ body {
   background-color: antiquewhite;
   padding: 20px;
   box-shadow: 0 0 10px 0 black;
+  transition: all 0.3s;
 }
 
 h2 {
@@ -42,3 +43,41 @@ label {
   display: flex;
   gap: 10px;
 }
+
+.buttons {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+input.buttons {
+  background-color: rgb(246, 211, 166);
+}
+
+button.buttons {
+  background-color: chocolate;
+  width: 80px;
+  color: white;
+}
+
+#all-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked+span::before {
+  content: "X";
+  margin-right: 10px;
+}
+
+input[type="checkbox"]+span::before {
+  content: "_";
+  margin-right: 10px;
+  background-color: aqua;
+}
+*/
