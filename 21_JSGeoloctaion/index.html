@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorting Band Names</title>
+  <title>JS Geolocation</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,14 @@
 
 <body>
   <div id="main">
-    <ul id="bands"></ul>
-    <div id="buttons">
-      <button id="original" class="button">original</button>
-      <button id="sort" class="button">sort</button>
-      <button id="reverse" class="button">reverse</button>
+    <img src="./assets/compass.png" alt="compass">
+    <div id="line-v"></div>
+    <div id="line-h"></div>
+    <div id="coords">
+      <p id="lat"></p>
+      <p id="long"></p>
     </div>
+    <div id="speed"></div>
   </div>
   <script src="index.js">
   </script>

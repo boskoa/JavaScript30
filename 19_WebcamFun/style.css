@@ -24,6 +24,7 @@ body {
   align-self: flex-start;
   font-size: 12px;
   width: 425px;
+  position: relative;
 }
 
 .controls button {
@@ -63,10 +64,16 @@ body {
 }
 
 .player {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: 0px;
+  right: -220px;
   width: 200px;
+
+  @media only screen and (max-width: 670px) {
+    position: fixed;
+    top: calc(100vh - 150px);
+    left: 20px;
+  }
 }
 
 .strip {

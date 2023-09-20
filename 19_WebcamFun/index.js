@@ -119,4 +119,5 @@ greenScreenButton.addEventListener("click", () => {
 });
 resetButton.addEventListener("click", () => {
   filterFunction = null;
+  ghosting = false;
 });

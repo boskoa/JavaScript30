@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="main">
     <div class="controls">
       <button onClick="takePhoto()">Take Photo</button>
+      <video class="player"></video>
       <div class="rgb">
         <div class="sub-rgb">
           <label>Red Min: <input type="range" min=0 max=255 name="rmin"></label>
@@ -39,7 +40,6 @@
     </div>
 
     <canvas class="photo"></canvas>
-    <video class="player"></video>
     <div class="strip"></div>
   </div>
   <audio class="snap" src="./assets/snap.mp3" hidden></audio>
