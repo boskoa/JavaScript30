@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stripe Dropdown Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main">
+    <nav>
+      <div class="move">
+        <span class="arrow"></span>
+      </div>
+      <ul id="nav-list">
+        <li class="nav-links">
+          <a href="#">About me</a>
+          <div id="about" class="sub-menu hidden">
+            <p>Some biography. Text text text text text text text text text text text text text text text text text text
+              text text
+            </p>
+          </div>
+        </li>
+        <li class="nav-links">
+          <a href="#">Courses</a>
+          <ul id="courses" class="sub-menu hidden">
+            <li><a href="#">Course 1</a></li>
+            <li><a href="#">Course 2</a></li>
+            <li><a href="#">Course 3</a></li>
+            <li><a href="#">Course 4</a></li>
+            <li><a href="#">Course 5</a></li>
+            <li><a href="#">Course 6</a></li>
+            <li><a href="#">Course 7</a></li>
+          </ul>
+        </li>
+        <li class="nav-links">
+          <a href="#">Other Links</a>
+          <div id="other" class="sub-menu hidden">
+            <a href="#">Some long link 1</a>
+            <a href="#">Some long link 2</a>
+            <a href="#">Some long link 3</a>
+            <a href="#">Some long link 4</a>
+            <a href="#">Some long link 5</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="index.js">
+  </script>
+</body>
+
+</html>

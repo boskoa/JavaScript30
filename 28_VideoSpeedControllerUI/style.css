@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+#main {
+  min-width: 460px;
+  min-height: 100vh;
+  background: url("./assets/synthwave-city.jpg");
+  background-size: cover;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#speed {
+  width: 34px;
+  border-radius: 15px;
+  background-color: purple;
+  overflow: hidden;
+  position: relative;
+  border: 1px dotted black;
+}
+
+#speed-input {
+  width: 34px;
+  height: 10px;
+  background-color: cyan;
+  transition: all 0.1s;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+#speed-input-bar {
+  cursor: row-resize;
+  width: 34px;
+  position: absolute;
+  bottom: calc(50% - 5px);
+  z-index: 10;
+  height: 10px;
+  text-align: center;
+}
+
+#text {
+  color: cyan;
+  position: relative;
+  bottom: -10px;
+  transition: all 0.1s;
+}

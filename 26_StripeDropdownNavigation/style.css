@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+#main {
+  min-width: 360px;
+  min-height: 100vh;
+  background-color: gold;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+}
+
+#nav-list>li {
+  padding: 10px;
+  background-color: black;
+  position: relative;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: gold;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 55px;
+  padding: 10px;
+  display: inline;
+  color: gold;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  transform: scale(0);
+  opacity: 0;
+}
+
+#about {
+  width: 180px;
+}
+
+#courses {
+  width: 120px;
+  list-style: none;
+}
+
+#other {
+  width: 140px;
+}
+
+.move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 grey;
+  transition: all 0.3s, opacity 0.1s;
+  transform-origin: 50% 0;
+  opacity: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: black;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.show {
+  opacity: 1;
+}

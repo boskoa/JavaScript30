@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+#main {
+  min-width: 360px;
+  min-height: 100vh;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#middle {
+  height: 70vh;
+  width: 70vw;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner {
+  height: 40vh;
+  width: 40vw;
+  background-color: black;
+}
