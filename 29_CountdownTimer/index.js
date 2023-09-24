@@ -22,13 +22,17 @@ function setTimer(time) {
   timeLeft.innerText = `${Math.floor(countDown / 60)}:${(countDown % 60)
     .toString()
     .padStart(2, "0")}`;
+  timeLeft.style.textShadow = "none";
 
   index = setInterval(() => {
-    countDown--;
+    countDown = Math.round((backAtTime - Date.now()) / 1000);
     const minutes = Math.floor(countDown / 60);
     const seconds = (countDown % 60).toString().padStart(2, "0");
     timeLeft.innerText = document.title =
       countDown < 0 ? "Get your ass back to work!" : `${minutes}:${seconds}`;
+    if (countDown < 10 && countDown >= 0) {
+      timeLeft.style.textShadow = "0 0 10px red";
+    }
     if (countDown < 0) {
       document.title = "Countdown Timer";
       return clearInterval(index);
